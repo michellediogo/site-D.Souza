@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(148, 134, 134, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px; /* Altura fixa do cabeçalho */
+}
+
+header .logo {
+    flex: 1; /* Permite que a área do logo cresça para preencher o espaço */
+}
+
+header .logo img {
+    width: 20%; /* Faz o logo preencher a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 100%; /* Garante que a altura não ultrapasse a do cabeçalho */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+nav {
+    margin: 0; /* Remove a margem do menu */
+    position: relative; /* Permite o controle do `z-index` do menu */
+    left: -20px; /* Ajusta a posição do menu a partir do lado esquerdo */
+    z-index: 1100; /* Garante que o menu fique acima de outros elementos */
+}
+
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; /* Remove a margem externa do ul */
+    padding: 0; /* Remove o preenchimento interno do ul */
+    display: flex; /* Aplica o modelo Flexbox para dispor os itens da lista em linha */
+    justify-content: flex-end; /* Alinha os itens do menu à direita */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaço entre os itens da lista */
+}
+
+nav ul li a {
+    color: var(--cor-fundo); /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Aplica negrito ao texto dos links */
+}
+
+nav ul li a:hover {
+    color: var(--cor-secundaria); /* Altera a cor ao passar o mouse sobre o link */
+}
+section {
+    padding: 60px 20px;
+}
+
+.inicio img {
+    width: 100%;
+    height: 120vh; /* Altura proporcional à página */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.inicio {
+    position: relative;
+    padding: 5px; /* Adiciona um espaço ao redor do conteúdo */
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.texto-inicio {
+    display: flex;
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: flex-start;
+    padding-left: 150px; /* Ajuste conforme necessário */
+}
+
+.slogan {
+    text-align: center; /* Mantém o texto centralizado dentro do container */
+    margin: 100px 0 -80px -400px; /* Ajusta a margem superior e a margem esquerda negativa */
+    
+}
+
+.descricao {
+    text-align: left;      /* Alinha o texto à esquerda */
+    margin-left: auto;    /* Empurra o elemento para a direita, se estiver dentro de um container flexível */
+    max-width: 600px;     /* Define uma largura máxima para o parágrafo */
+    font-family: "Open Sans"; /* Define a fonte do texto */
+    font-size: 23px; 
+}
+
+.sobre-nos .capa-sobre {
+    position: relative;
+    text-align: center;
+}
+
+.sobre-nos .capa-sobre {
+    margin-top: 20px;    /* Espaço superior */
+    margin-right: -15px;  /* Espaço à direita */
+    margin-bottom: 20px; /* Espaço inferior */
+    margin-left: -15px;   /* Espaço à esquerda */
+}
+
+.sobre-nos .capa-sobre img {
+    width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner */
+    height: 60vh;
+    display: block; /* Remove o espaço embaixo da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.sobre-nos .capa-sobre h2 {
+    margin-top: -90px; /* Espaçamento superior entre a imagem e o título */
+    font-size: 4em; /* Tamanho do texto do título */
+    color: #333; /* Cor do texto do título */
+    transform: translate(-35%, -70%);
+    color: white;
+    padding: -100px;
+    font-size: 2m;
+}
+
+.container {
+    display: grid;
+    place-items: center;    /* Centraliza horizontal e verticalmente o conteúdo */
+    height: 100vh;          /* Define a altura do contêiner para ocupar a altura total da viewport */
+}
+.conteudo_Desc {
+    text-align: center;      /* Centraliza o texto dentro do parágrafo */
+    max-width: 920px;        /* Define uma largura máxima para o parágrafo */
+    font-family: "Open Sans"; /* Define a fonte do texto */
+    font-weight: 400;
+    font-size: 27px;         /* Define o tamanho da fonte */
+    box-sizing: border-box;  /* Inclui o padding e border no cálculo da largura e altura do elemento */
+    margin-left: 300px;       /* Ajusta a margem esquerda para posicionar o elemento mais para a esquerda */
+}
+
+
+.sobre-nos .conteudo {
+    text-align: center;  /* Centraliza o texto */
+    font-size: 4em;      /* Aumenta o tamanho do texto; você pode ajustar o valor conforme necessário */
+    margin: 0;     
+}
+
+
+.referencia {
+    display: flex;                /* Usa o layout flexível */
+    align-items: center;          /* Centraliza verticalmente os itens dentro do contêiner flexível */
+    margin-bottom: 20px;          /* Espaço entre cada bloco de referência, ajuste conforme necessário */
+}
+
+.referencia p {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: "Open Sans"; /* Ajuste a fonte conforme necessário */
+    font-size: 30px;
+    text-align: left;              /* Alinha o texto à esquerda */
+    margin-right: 20px;           /* Espaço entre o texto e a imagem */
+    flex: 1;   
+    margin-left: 200px;            /* Espaço entre o texto e a borda esquerda do contêiner */
+
+
+}
+
+.referencia img {
+    width: 30%;                    /* Define a largura da imagem, ajuste conforme necessário */
+    height: auto;                 /* Mantém a proporção da imagem */
+    margin-left: 0;               /* Remove qualquer margem à esquerda da imagem, ajuste conforme necessário */
+}
+.servicos .capa-servicos {
+    position: relative;
+    text-align: center;
+}
+
+.servicos .capa-servicos {
+    margin-top: px;    /* Espaço superior */
+    margin-right: -15px;  /* Espaço à direita */
+    margin-bottom: 20px; /* Espaço inferior */
+    margin-left: -15px;   /* Espaço à esquerda */
+}
+
+.servicos .capa-servicos h2 {
+    margin-top: -90px; /* Espaçamento superior entre a imagem e o título */
+    font-size: 4em; /* Tamanho do texto do título */
+    color: #333; /* Cor do texto do título */
+    transform: translate(-35%, -70%);
+    color: white;
+    padding: -100px;
+    font-size: 2m;
+}
+
+
+.servicos .capa-servicos img {
+    width: 100%; /* Garante que a imagem não exceda o tamanho do contêiner */
+    height: 60vh;
+    display: block; /* Remove o espaço embaixo da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+.container {
+    display: grid;
+    place-items: center;    /* Centraliza horizontal e verticalmente o conteúdo */
+    height: 100vh;          /* Define a altura do contêiner para ocupar a altura total da viewport */
+}
+
+.conteudo_Desc2 {
+    text-align: center;      /* Centraliza o texto dentro do parágrafo */
+    max-width: 920px;        /* Define uma largura máxima para o parágrafo */
+    font-family: "Open Sans"; /* Define a fonte do texto */
+    font-weight: 400;
+    font-size: 25px;         /* Define o tamanho da fonte */
+    box-sizing: border-box;  /* Inclui o padding e border no cálculo da largura e altura do elemento */
+    margin-left: 300px;       /* Ajusta a margem esquerda para posicionar o elemento mais para a esquerda */
+}
+
+
+.servicos .conteudo2 {
+
+    font-size: 3em;      /* Aumenta o tamanho do texto; você pode ajustar o valor conforme necessário */
+    margin-left: 200px;       /* Ajusta a margem esquerda para posicionar o elemento mais para a esquerda */
+    
+
+}
+
+.referencia2 {
+    display: flex;                /* Usa o layout flexível */
+    align-items: center;          /* Centraliza verticalmente os itens dentro do contêiner flexível */
+    margin-bottom: 20px;          /* Espaço entre cada bloco de referência, ajuste conforme necessário */
+}
+
+.referencia2 p {
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    letter-spacing: normal;
+    font-family: "Open Sans"; /* Ajuste a fonte conforme necessário */
+    font-size: 30px;
+    text-align: left;              /* Alinha o texto à esquerda */
+    margin-right: 20px;           /* Espaço entre o texto e a imagem */
+    flex: 1;   
+    margin-left: 200px;            /* Espaço entre o texto e a borda esquerda do contêiner */
+
+
+}
+
+.referencia2 img {
+    width: 30%;                    /* Define a largura da imagem, ajuste conforme necessário */
+    height: auto;                 /* Mantém a proporção da imagem */
+    margin-left: 0;               /* Remove qualquer margem à esquerda da imagem, ajuste conforme necessário */
+}
+
+
+.contato {
+    background-color: #f4f4f4;      /* Cor de fundo clara para a seção */
+    padding: 50px 20px;             /* Espaço interno para separar o conteúdo das bordas */
+    text-align: center;             /* Centraliza o texto */
+}
+
+/* Estiliza o título da seção de contato */
+.contato h2 {
+    font-size: 2.5em;               /* Tamanho grande para o título */
+    color: #333;                    /* Cor escura para o texto */
+    margin-bottom: 30px;            /* Espaço abaixo do título */
+}
+
+/* Contêiner para as informações de contato */
+.informacoes-contato {
+    display: flex;                  /* Usa layout flexível para os itens de contato */
+    justify-content: center;        /* Centraliza horizontalmente */
+    flex-wrap: wrap;                /* Permite que os itens se movam para a linha seguinte em telas menores */
+    gap: 20px;                      /* Espaço entre os itens */
+}
+
+/* Estilo para cada item de contato */
+.info-item {
+    background-color: #ddd;         /* Cor de fundo branca para contraste */
+    border: 1px solid #af0491;         /* Borda leve para os itens */
+    border-radius: 5px;             /* Cantos arredondados */
+    padding: 20px;                  /* Espaço interno */
+    max-width: 300px;               /* Largura máxima dos itens */
+    text-align: left;               /* Alinha o texto à esquerda dentro do item */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona uma sombra leve */
+    margin: 10px;                   /* Espaço externo entre os itens */
+}
+
+/* Estilo para os links de telefone e e-mail */
+.info-item a {
+    color: #af0491;                 /* Cor azul para os links */
+    text-decoration: none;          /* Remove o sublinhado dos links */
+}
+
+.info-item a:hover {
+    text-decoration: underline;     /* Sublinha os links ao passar o mouse */
+}
+
+/* Estilo para os subtítulos dentro dos itens de contato */
+.info-item h3 {
+    font-size: 1.5em;               /* Tamanho médio para subtítulos */
+    color: #333;                    /* Cor escura para o texto */
+    margin-bottom: 10px;            /* Espaço abaixo do subtítulo */
+}
+
+/* Estiliza o rodapé */
+.rodape {
+    background-color: #fff;         /* Cor de fundo cinza escuro */
+    color: #af0491;                    /* Cor do texto branca */
+    padding: -10px -20px;             /* Espaçamento interno */
+    position: 50px;                /* Fixa o rodapé na parte inferior da página */
+    bottom: 0;                      /* Posiciona o rodapé no fundo */
+    width: 100%;                    /* Faz o rodapé ocupar toda a largura da página */
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.2); /* Adiciona uma sombra leve na parte superior */
+    z-index: 1000;                  /* Garante que o rodapé fique acima de outros elementos */
+    display: flex;                  /* Usa layout flexível para alinhar os itens */
+    justify-content: space-between; /* Espaça os itens para as extremidades */
+    align-items: center;            /* Alinha os itens verticalmente no centro */
+}
+
+/* Estilo para o logotipo */
+.rodape .logo img {
+    height: 200px;                   /* Define uma altura para o logotipo, ajuste conforme necessário */
+    margin-right: 0px;            /* Espaço entre o logotipo e as informações de contato */
+}
+
+/* Estilo para as informações de contato */
+.rodape .contato {
+    font-size: 18px;               /* Tamanho da fonte para as informações de contato */
+    margin-left: 350px;            /* Adiciona margem à esquerda para mover o conteúdo para a direita */
+    flex: 1;                       /* Faz o bloco de contato ocupar o espaço restante */
+    text-align: left;             /* Alinha o texto à esquerda */
+}
+
+.rodape .contato a {
+    color: #af0491;                /* Cor azul para links */
+    text-decoration: none;         /* Remove o sublinhado dos links */
+}
+
+.rodape .contato a:hover {
+    text-decoration: underline;    /* Sublinha os links ao passar o mouse */
+}
+
+
