@@ -347,4 +347,119 @@ section {
     text-decoration: underline;    /* Sublinha os links ao passar o mouse */
 }
 
+/* Estilo para dispositivos móveis (telas com largura máxima de 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5px; /* Reduz o padding do cabeçalho para dispositivos móveis */
+        height: auto; /* Permite que a altura do cabeçalho se ajuste ao conteúdo */
+    }
 
+    header .logo img {
+        width: 50%; /* Ajusta o tamanho do logo para caber melhor em telas menores */
+    }
+
+    nav {
+        left: 0; /* Remove o deslocamento à esquerda do menu */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda a orientação dos itens do menu para coluna em vez de linha */
+        align-items: center; /* Centraliza os itens do menu */
+        margin-top: 10px; /* Adiciona um espaçamento superior */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Remove a margem entre os itens do menu */
+        margin-bottom: 10px; /* Adiciona espaço abaixo de cada item do menu */
+    }
+
+    .inicio {
+        padding: 20px; /* Ajusta o padding para dispositivos móveis */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .texto-inicio {
+        padding-left: 0; /* Remove o padding esquerdo */
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .slogan {
+        margin: 50px 0; /* Ajusta a margem superior e inferior */
+        margin-left: 0; /* Remove a margem esquerda negativa */
+    }
+
+    .descricao, .conteudo_Desc, .conteudo_Desc2 {
+        font-size: 18px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
+        padding: 0 10px; /* Adiciona padding para evitar que o texto encoste nas bordas */
+    }
+
+    .referencia, .referencia2 {
+        flex-direction: column; /* Muda a orientação dos itens para coluna */
+        align-items: center; /* Centraliza os itens */
+        margin-bottom: 10px; /* Ajusta o espaço entre os itens */
+    }
+
+    .referencia p, .referencia2 p {
+        margin-left: 0; /* Remove a margem esquerda */
+        font-size: 20px; /* Ajusta o tamanho da fonte */
+    }
+
+    .referencia img, .referencia2 img {
+        width: 70%; /* Ajusta a largura das imagens */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .servicos .capa-servicos h2 {
+        font-size: 2em; /* Ajusta o tamanho da fonte do título */
+        margin-top: 10px; /* Ajusta a margem superior */
+    }
+
+    .servicos .capa-servicos img {
+        height: auto; /* Ajusta a altura da imagem para se adaptar ao tamanho do contêiner */
+    }
+
+    .rodape {
+        flex-direction: column; /* Muda a orientação dos itens do rodapé para coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
+        padding: 20px; /* Ajusta o padding */
+    }
+
+    .rodape .logo img {
+        height: 100px; /* Ajusta a altura do logotipo */
+        margin-right: 0; /* Remove a margem direita */
+    }
+
+    .rodape .contato {
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+/* Estilo para dispositivos muito pequenos (telas com largura máxima de 480px) */
+@media (max-width: 480px) {
+    header .logo img {
+        width: 70%; /* Ajusta ainda mais o tamanho do logo */
+    }
+
+    nav ul {
+        margin-top: 20px; /* Aumenta o espaçamento superior */
+    }
+
+    .inicio img {
+        height: 80vh; /* Ajusta a altura da imagem de início para caber melhor em telas pequenas */
+    }
+
+    .slogan, .descricao, .conteudo_Desc, .conteudo_Desc2 {
+        font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .referencia img, .referencia2 img {
+        width: 100%; /* Faz as imagens ocuparem toda a largura disponível */
+    }
+
+    .servicos .capa-servicos img {
+        height: auto; /* Ajusta a altura das imagens para que não sejam cortadas */
+    }
+}
